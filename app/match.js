@@ -1,6 +1,12 @@
 let Set = require('./set');
 let Game = require('./game');
 
+/*
+I've hardcoded the tennis rule logic throughout many comparison operators
+Alternatively I could pull hardcoded values out into a tennis-rules.json and pull values from that file
+However for this exercise I didn't see the need
+*/
+
 class Match {
     // toWin set to 1, can be extended to multiple sets
     constructor() {

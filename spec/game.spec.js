@@ -67,7 +67,7 @@ describe("Game", () => {
             let game = new Game(true);
 
             game._playerOne = 6;
-            game._playerTwo = 4;
+            game._playerTwo = 2;
             game.checkTiebreakWon();
             expect(game._start).toBe(true);
             expect(game._winner).toBe(0);
