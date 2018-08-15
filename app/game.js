@@ -27,6 +27,7 @@ class Game {
         }
     }
 
+    // normal scoring, advantage scoring or tie-break scoring
     printGameScore() {
         if (!this._tiebreaker) {
             if (this._playerOne >= 3 && this._playerTwo >= 3) {

@@ -2,6 +2,7 @@ let Set = require('./set');
 let Game = require('./game');
 
 class Match {
+    // toWin set to 1, can be extended to multiple sets
     constructor() {
         this._start = true;
         this._winner = 0;
@@ -26,6 +27,7 @@ class Match {
         return (this._history.length > 0) ? history + ' ' + this._set.printSetScore() + ' ' + this._game.printGameScore() : this._set.printSetScore() + ' ' + this._game.printGameScore();
     }
 
+    // check match pregress - whether to reset current set or game
     checkMatchProgress() {
         if (!this._game.start && this._game._winner !== 0) {
             this._set.incrementScore(this._game._winner);
@@ -38,6 +40,7 @@ class Match {
         }
     }
 
+    // check the winning condition
     checkWin() {
         if (this._playerOneSets || this._playerTwoSets === this._toWin) {
             this._start = false;
