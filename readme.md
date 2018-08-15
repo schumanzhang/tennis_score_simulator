@@ -11,4 +11,9 @@ player wins the next point, then the scoring system calculates the score in prog
 - node index.js
 
 ## Running the tests
+
+First time running tests:
+- npm run test-init
+
+Then:
 - npm test
