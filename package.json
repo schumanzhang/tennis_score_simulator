@@ -1,0 +1,23 @@
+{
+  "name": "tennis_scoring",
+  "version": "1.0.0",
+  "description": "tennis scoring in javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test-init": "./node_modules/jasmine/bin/jasmine.js init",
+    "test": "./node_modules/jasmine/bin/jasmine.js"
+  },
+  "keywords": [
+    "tennis",
+    "scoring"
+  ],
+  "author": "schumanzhang",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.2.0"
+  }
+}
